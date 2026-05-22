@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+/* ================= SECTION ================= */
+
+.features-section{
+    width:100%;
+    min-height:100vh;
+
+    padding:90px 80px;
+}
+
+/* ================= TOP AREA ================= */
+
+.top-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* LEFT TEXT */
+
+.left-text{
+    width:55%;
+}
+
+.left-text h1{
+    font-size:65px;
+    line-height:85px;
+}
+
+.left-text span{
+    color:#ff33d4;
+}
+
+/* RIGHT TEXT */
+
+.right-text{
+    width:30%;
+}
+
+.right-text p{
+    color:#bdbdbd;
+    line-height:30px;
+    font-size:18px;
+}
+
+/* ================= FEATURE BOX ================= */
+
+.feature-boxes{
+    width:100%;
+
+    margin-top:120px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:35px;
+}
+
+/* CARD */
+
+.feature-card{
+    width:300px;
+    height:240px;
+
+    background:#1f1f1f;
+
+    border:1px solid #555;
+
+    text-decoration:none;
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    transition:0.4s;
+}
+
+/* HOVER */
+
+.feature-card:hover{
+    transform:translateY(-15px);
+    border-color:#ff33d4;
+
+    box-shadow:0 0 25px rgba(255,51,212,0.4);
+}
+
+/* ACTIVE CARD */
+
+.active-card{
+    background:#555;
+
+    transform:translateY(-40px);
+
+    border:2px solid #ddd;
+}
+
+/* ICON */
+
+.icon{
+    font-size:65px;
+    margin-bottom:25px;
+}
+
+/* TEXT */
+
+.feature-card h2{
+    text-align:center;
+    line-height:35px;
+    font-size:28px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .top-area{
+        flex-direction:column;
+    }
+
+    .left-text{
+        width:100%;
+    }
+
+    .right-text{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .feature-boxes{
+        flex-direction:column;
+    }
+
+    .left-text h1{
+        font-size:45px;
+        line-height:60px;
+    }
+
+    .feature-card{
+        width:100%;
+        max-width:350px;
+    }
+
+}
